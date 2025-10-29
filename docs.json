@@ -1,11 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "ABS AI Center of Excellence",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#FFFFFF",
     "light": "#07C983",
     "dark": "#15803D"
+  },
+  "fonts": {
+    "family": "Inter"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -22,7 +25,7 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "SIERRA",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -66,6 +69,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Learn",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/sierra-dashboard"
+            ]
+          }
+        ]
       }
     ],
     "global": {
@@ -88,15 +102,9 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Try SIERRA",
       "href": "https://dashboard.mintlify.com"
     }
   },
@@ -111,12 +119,5 @@
      "cursor",
      "vscode"
    ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
