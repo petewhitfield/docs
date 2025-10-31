@@ -17,12 +17,20 @@ We’ve heard the complaints: too many unsupported file types, and poor extracti
 
 To deploy this upgrade, we’ll take these steps soon:
 
-1. Finalize infrastructure deployment for the production Documents Service
-2. Upgrade the Vercel AI SDK that Sierra is built on
-3. Replace the existing API calls for thread attachments
-4. Replace the existing API calls for workspace files
-5. Improve the Sierra agent loop so it references attachments consistently
-6. Migrate existing attachments and files to the new service
+<Steps>
+  <Step title="Finalize infrastructure deployment for the production Documents Service">
+  </Step>
+  <Step title="Upgrade the Vercel AI SDK that Sierra is built on">
+  </Step>
+  <Step title="Replace the existing API calls for thread attachments">
+  </Step>
+  <Step title="Replace the existing API calls for workspace files">
+  </Step>
+  <Step title="Improve the Sierra agent loop so it references attachments consistently">
+  </Step>
+  <Step title="Migrate existing attachments and files to the new service">
+  </Step>
+</Steps>
 
 There will be backward compatibility issues. Expect a few new bugs — tell us what you hit and we’ll triage ASAP. We’ll likely also purge attachments that aren’t being used anymore; if something you need disappears, please let us know.
 
