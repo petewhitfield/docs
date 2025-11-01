@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "almond",
   "name": "ABS AI Center of Excellence",
   "colors": {
     "primary": "#01B6E3",
