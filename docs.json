@@ -17,34 +17,32 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "welcome",
+              "blog",
+              "feedback"
             ]
           },
           {
             "group": "SIERRA",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "sierra/about-and-faq",
+              "sierra/data-policy"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Tango",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "tango/markdown",
+              "tango/code"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "AI Tools",
             "pages": [
               "ai-tools/cursor"
             ],
@@ -69,28 +67,8 @@
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
         ]
-      },
-      {
-        "tab": "Learn",
-        "groups": [
-          {
-            "group": "Resources",
-            "pages": [
-              "resources/sierra-dashboard"
-            ]
-          }
-        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "SIERRA",
-          "href": "https://sierra.absconsulting.com",
-          "icon": "message-square-more"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -102,7 +80,7 @@
     "primary": {
       "type": "button",
       "label": "Try SIERRA",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://sierra.absconsulting.com"
     }
   },
   "contextual": {
