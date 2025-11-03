@@ -26,7 +26,6 @@
             "group": "Getting started",
             "pages": [
               "articles/welcome-to-aicoe",
-              "blog",
               "feedback"
             ]
           },
@@ -34,14 +33,16 @@
             "group": "SIERRA",
             "pages": [
               "sierra/about-and-faq",
-              "sierra/data-policy"
+              "sierra/data-policy",
+              "sierra/sierra-learning-series"
             ]
           },
           {
             "group": "Tango",
             "pages": [
-              "tango/markdown",
-              "tango/code"
+              "tango/about",
+              "tango/installation-guide",
+              "tango/watch-a-demo"
             ]
           },
           {
@@ -73,6 +74,17 @@
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
         ]
+      },
+      {
+        "tab": "Blog",
+        "groups": [
+          {
+            "group": "Blog",
+            "pages": [
+              "blog"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -86,8 +98,7 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "height": 48,
-    "width": 150
+    "href": "https://portal.absconsulting.com"
   },
   "contextual": {
     "options": [
