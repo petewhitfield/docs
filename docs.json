@@ -13,7 +13,10 @@
   "icons": {
     "library": "lucide"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/favicon-light.svg",
+    "dark": "/favicon-dark.svg"
+  },
   "navigation": {
     "tabs": [
       {

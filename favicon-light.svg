@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AI_COE_square" xmlns="http://www.w3.org/2000/svg" viewBox="11.75 11.36 177.84 177.84">
+  <defs>
+    <style>.cls-1{fill:#000;}</style>
+  </defs>
+  
+  <!-- Box -->
+  <g id="AI_Box">
+    <path class="cls-1" d="M188.59,12.36v175.84H12.75V12.36h175.84M189.59,11.36H11.75v177.84h177.84V11.36h0Z"/>
+  </g>
+  
+  <!-- AI Text -->
+  <g id="AI">
+    <path class="cls-1" d="M83.49,31.96h11.61l50.06,110.64h-13.34l-12.87-29.03h-59.79l-13.03,29.03h-12.71L83.49,31.96ZM114.09,102.42l-24.95-56.03-25.11,56.03h50.06Z"/>
+    <path class="cls-1" d="M155.65,32.74h12.4v109.86h-12.4V32.74Z"/>
+  </g>
+  
+  <!-- Dots Pattern -->
+  <g id="AI_dots">
+    <circle class="cls-1" cx="40.31" cy="163.05" r="6.73"/>
+    <circle class="cls-1" cx="134.58" cy="163.05" r="6.73"/>
+    <circle class="cls-1" cx="161.52" cy="163.05" r="6.73"/>
+    <rect class="cls-1" x="60.51" y="156.31" width="40.41" height="13.5" rx="6.74" ry="6.74"/>
+  </g>
+</svg>
+
