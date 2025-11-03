@@ -40,7 +40,9 @@
           {
             "group": "Tango",
             "pages": [
-              "tango/about"
+              "tango/about",
+              "tango/installation-guide",
+              "tango/watch-a-demo"
             ]
           },
           {
