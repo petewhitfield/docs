@@ -3,9 +3,9 @@
   "theme": "almond",
   "name": "ABS AI Center of Excellence",
   "colors": {
-    "primary": "#01B6E3",
-    "light": "#57DDFE",
-    "dark": "#0188AA"
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#01B6E3"
   },
   "fonts": {
     "family": "Inter"
@@ -60,18 +60,28 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting started",
+            "icon": "rocket",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/welcome"
             ]
           },
           {
             "group": "Documents Service",
+            "icon": "file-text",
+            "display": "simple",
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
         ]
       }
     ]
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get started",
+      "href": "https://portal.absconsulting.com"
+    }
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -81,14 +91,30 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "mcp",
+      "cursor"
+    ]
+  },
+  "api": {
+    "playground": {
+      "display": "interactive"
+    },
+    "auth": {
+      "method": "key",
+      "name": "Api-Key",
+      "in": "header"
+    },
+    "examples": {
+      "languages": [
+        "curl",
+        "python",
+        "javascript",
+        "go"
+      ],
+      "defaults": "required",
+      "prefill": true
+    }
   }
 }
