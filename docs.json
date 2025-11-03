@@ -76,13 +76,6 @@
     "height": 48,
     "width": 150
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Try SIERRA",
-      "href": "https://sierra.absconsulting.com"
-    }
-  },
   "contextual": {
     "options": [
      "copy",
