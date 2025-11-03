@@ -22,7 +22,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "welcome",
+              "articles/welcome-to-aicoe",
               "blog",
               "feedback"
             ]
