@@ -15,3 +15,131 @@ Sierra is an AI chat assistant designed to support the employees of ABS. The Tec
     Isolation from the outside world
   </Card>
 </Columns>
+
+## Training Videos
+
+#### Sierra Learning Series
+
+The Technology Team is excited to present a new set of training videos. These videos are designed to empower learners with practical skills in using Sierra, covering everything from foundational concepts to advanced techniques. Dive in and elevate your productivity!
+
+<Icon icon="video" size={24} /> [Watch Sierra Learning Series](https://eagle.sharepoint.com/sites/trySierra)
+
+#### How to Research and Write Using Generative AI Tools
+
+This LinkedIn Learning video provides a great overview of how to work with ChatGPT generate content. In particular, **Section 1: Overview of Working with AI** is essential viewing, particularly the framework he introduced for writing an effective prompt for AI. If you only watch one thing, it should be this section.
+
+<Icon icon="video" size={24} /> [Watch on LinkedIn Learning](https://www.linkedin.com/learning/how-to-research-and-write-using-generative-ai-tools/how-to-work-with-the-responses-from-a-generative-ai-chatbot)
+
+#### Learning ChatGPT for Business Analysis
+
+This LinkedIn Learning video provides an overview of ChatGPT basics before introducing several common business use cases. While generic, it should give you some ideas about what is possible with ChatGPT and how you can tailor it to your work.
+
+<Icon icon="video" size={24} /> [Watch on LinkedIn Learning](https://www.linkedin.com/learning/learning-chatgpt-for-business-analysis)
+
+#### Prompt Engineering: How to Talk to the AIs
+
+This LinkedIn Learning video provides a good summary of the core concepts of large-language models (LLMs) before diving into a detailed exploration of how to develop prompts for various applications.
+
+<Icon icon="video" size={24} /> [Watch on LinkedIn Learning](https://www.linkedin.com/learning/prompt-engineering-how-to-talk-to-the-ais)
+
+## Models
+
+Sierra makes the latest models from frontier providers such as OpenAI, Meta, and xAI available to ABS employees in a private environment in Microsoft Azure. Below is a table of the models currently available.
+
+| **Model**            | **Description**               | **Reasoning** | **Context**             | **Training Cutoff** | **Input/1M tokens** | **Output/1M tokens** |
+| :------------------- | :---------------------------- | :------------ | :---------------------- | :------------------ | :------------------ | :------------------- |
+| Claude Sonnet 4      | High performance model        | **No**        | 200K                    | March 2025          | \$3                 | \$15                 |
+| Claude Opus 4        | Most capable model            | **No**        | 200K                    | March 2025          | \$15                | \$75                 |
+| Llama-4-Maverick     | General purpose model         | **No**        | 1000K                   | August 2024         | \$0.20              | \$0.82               |
+| gpt-auto **Default** | Dynamic model selection       | **No**        | --                      | --                  | --                  | --                   |
+| gpt-5-thinking       | General purpose model         | **No**        | 272K Input, 128K Output | October 2024        | \$1.25              | \$10.00              |
+| gpt-5-mini           | Faster general purpose model  | **No**        | 272K Input, 128K Output | May 2024            | \$0.25              | \$2.00               |
+| gpt-4o               | Legacy general purpose model  | **No**        | 128K                    | September 2023      | \$2.50              | \$10.00              |
+| grok-3               | General purpose model         | **No**        | 131K                    | November 2024       | \$3.00              | \$15.00              |
+| grok-3-mini          | Lightweight isReasoning model | **No**        | 131K                    | November 2024       | \$0.25              | \$1.27               |
+
+### <Icon icon="circle-question-mark" size={22} /> What are tokens?
+
+Tokens are the basic units of text that AI models process. ABS pays for tokens, not words. Roughly, 1 token equals 4 characters or 0.75 words in English. For example, "Hello world" is about 2 tokens. One page of size 12 Arial font is ~666 tokens. The pricing shown is per 1 million tokens, which is approximately 750,000 words or 4 million characters. Key takeaway: tokens are cheap. You can get a lot of work done for a few dollars.
+
+### <Icon icon="circle-question-mark" size={22} /> What is the context window?
+
+A model's context window is the maximum amount of text or data (usually measured in tokens) that it can process at one time, including both input and output. It determines how much information the model can "remember" or consider when generating a response. For example, a larger context window allows the model to handle longer conversations or documents, while a smaller one limits it to shorter inputs.
+
+### <Icon icon="circle-question-mark" size={22} /> What is the training cutoff date?
+
+The training cutoff date indicates when the model's training data ends. Models cannot access information or events that occurred after this date. For example, a model with an April 2024 cutoff won't know about events, news, or developments that happened after April 2024.
+
+## Tools
+
+Tools extend Sierra's capabilities by allowing it to access ABS knowledge repositories and take actions. Sierra does its best to determine if it should use a tool for a given task, but you can always ask it to use or not use a tool directly. Currently, Sierra has two tools: Attachments and SkillShare.
+
+### <Icon icon="file-text" size={20} /> Attachments
+
+The Attachments tool allows Sierra to search and analyze documents you've uploaded to your chat.
+
+### <Icon icon="users" size={20} /> SkillShare
+
+The SkillShare tool allows Sierra to search ABS Consulting's skillset and resume database to find employees with specific qualifications, experience, or skills.
+
+<Note>
+  If you have an idea for a new tool, please reach out to the Technology Team.
+</Note>
+
+## Workspaces (beta)
+
+Workspaces provide a streamlined interface for managing workflows you frequently perform. Workspaces offer three features that are not available in regular chats:
+
+1. Files: Attachments that are consistently used within workspace chats. 
+2. Instructions: Prompt instructions or specialized knowledge applied to every chat within the workspace. 
+3. Sharing: Workspaces can be shared with anyone who has access to Sierra. (Note: Individual chats are not shared.) 
+
+### Possible Use Cases 
+- Project Content Management: Store and reference files and information related to a specific project.
+- Repetitive Document Extractions: Save commonly used prompts in the instructions box. For example, instead of repeatedly typing the same prompt, store it in the instructions and submit each document to a thread with a simple command like "analyze this."
+- Topic-Specific Knowledge Repository: Use workspaces to query large sets of files related to a topic. Sierra can apply search algorithms to summarize information based on your query.
+- Personal Trainer/Advisor: Provide a workspace with information about yourself (e.g., results from a personality or professional strengths assessment) to receive personalized advice.
+
+<Note>Whether to take advice from a computer is up to you.</Note>
+
+### Important Guidelines
+
+When working with workspaces, keep these best practices in mind:
+
+- Instructions Placement: Only include instructions in the instructions box. Sierra will probably not follow instructions embedded within workspace files.
+- Instruction Length: Shorter instructions tend to perform better than very long ones.
+
+## Privacy
+
+### <Icon title="message-circle-question-mark" size={24}/> Is the information I provide in prompts to Sierra available to anyone else?
+
+The inputs and outputs you provide to Sierra are NOT available to Microsoft, OpenAI, Meta, xAI, or any other company. Your prompts and responses are NOT used to improve the models, and they are NOT used to improve any Microsoft or 3rd party products or services. Your prompts and responses are available only to you; however, they are monitored by system administrators and can be audited for proper business use.
+
+### <Icon title="message-circle-question-mark" size={24}/> Is Sierra suitable for ABS or client proprietary data?
+
+Yes – Sierra is hosted in a secure environment where you can provide ABS and client information in the prompts if it complies with the Data Policy.
+
+### <Icon title="message-circle-question-mark" size={24}/> Do I need to inform customers that I am using Sierra?
+
+Check with your manager or ask the legal department if there are any contractual provisions restricting use of AI or requiring disclosure of use of AI.
+
+### <Icon title="message-circle-question-mark" size={24}/> What is the data policy?
+
+See the [Data Policy](/sierra/data-policy).
+
+## Risks 
+
+<Columns cols={2}>
+  <Card title="Inaccurate Responses">
+    Even though it sounds authoritative, Sierra may not always provide accurate or contextually appropriate responses. These are called "hallucinations" and are a major challenge when using LLMs. You must review all content generated by Sierra.
+  </Card>
+  <Card title="Irrelevant Responses">
+    Sierra may not fully understand the context or nuances of a specific situation, particularly in some of the niche domains where we operate. This can lead to responses that are not relevant. You can provide additional information in the prompt to provide more context and instructions.
+  </Card>
+  <Card title="Data Leakage">
+    Sharing sensitive or confidential information with Sierra. Refer to the data policy before using it in prompts.
+  </Card>
+  <Card title="Out-of-date Responses">
+    The models used by Sierra are trained on a diverse range of internet data up until each model's respective cutoff date. It lacks knowledge of recent events. This is particularly important when using in research tasks or on emerging topics.
+  </Card>
+</Columns>
