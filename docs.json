@@ -61,15 +61,14 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "Getting started",
-            "icon": "rocket",
+            "group": "API Reference",
             "pages": [
-              "api-reference/welcome"
+              "api-reference/introduction",
+              "api-reference/authentication"
             ]
           },
           {
             "group": "Documents Service",
-            "icon": "file-text",
             "display": "simple",
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
@@ -91,8 +90,8 @@
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Get started",
-      "href": "https://portal.absconsulting.com"
+      "label": "Try SIERRA",
+      "href": "https://sierra.absconsulting.com"
     }
   },
   "logo": {
