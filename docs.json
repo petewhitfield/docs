@@ -24,7 +24,6 @@
         "groups": [
           {
             "group": "Getting started",
-            "icon": "rocket",
             "pages": [
               "articles/welcome-to-aicoe",
               "feedback"
@@ -32,7 +31,6 @@
           },
           {
             "group": "SIERRA",
-            "icon": "message-square-more",
             "pages": [
               "sierra/about-and-faq",
               "sierra/releases",
@@ -42,7 +40,6 @@
           },
           {
             "group": "Tango",
-            "icon": "file-text",
             "pages": [
               "tango/about",
               "tango/installation-guide",
@@ -51,13 +48,8 @@
           },
           {
             "group": "AI Tools",
-            "icon": "brain-circuit",
             "pages": [
               "ai-tools/cursor"
-            ],
-            "hidden pages": [
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
             ]
           }
         ]
@@ -66,15 +58,18 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "API Reference",
+            "group": "Getting started",
             "pages": [
               "api-reference/introduction",
               "api-reference/authentication"
             ]
           },
           {
+            "group": "SIERRA API",
+            "openapi": "https://api.sierra.absconsulting.com/openapi.json"
+          },
+          {
             "group": "Documents Service",
-            "display": "simple",
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
         ]
