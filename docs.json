@@ -24,6 +24,7 @@
         "groups": [
           {
             "group": "Getting started",
+            "icon": "rocket",
             "pages": [
               "articles/welcome-to-aicoe",
               "feedback"
@@ -31,6 +32,7 @@
           },
           {
             "group": "SIERRA",
+            "icon": "message-square-more",
             "pages": [
               "sierra/about-and-faq",
               "sierra/releases",
@@ -40,6 +42,7 @@
           },
           {
             "group": "Tango",
+            "icon": "file-text",
             "pages": [
               "tango/about",
               "tango/installation-guide",
@@ -48,6 +51,7 @@
           },
           {
             "group": "AI Tools",
+            "icon": "brain-circuit",
             "pages": [
               "ai-tools/cursor"
             ],
