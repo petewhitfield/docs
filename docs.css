@@ -1,5 +1,61 @@
+header div.eyebrow {
+  color: #01B6E3 !important;
+}
+
+#navigation-items li a.text-primary {
+  background-color: #01B6E322;
+  color: #01B6E3;
+}
+
+#table-of-contents-content li:has(a.text-primary) {
+  border-left-color: #01B6E3;
+  
+  & > a.text-primary {
+    border-left-color: #01B6E3;
+    color: #01B6E3;
+  }
+}
+
 .nav-logo {
   height: 56px;
   width: auto;
   padding-top: 10px;
+}
+
+.card > div:first-child {
+  align-items: start !important;
+}
+
+.release-update div[data-component-part="update-label"] {
+  background-color: #01B6E322;
+  color: #01B6E3;
+}
+
+.clickable-card div[data-component-part="card-icon"] svg {
+  background-color: #01B6E3;
+}
+
+.clickable-card .card:hover {
+  border-color: #01B6E3 !important;
+
+  & svg {
+    color: #01B6E3;
+  }
+}
+
+.sierra-card {
+  & .contextualized div[data-component-part="card-icon"] svg {
+    background-color: #01B6E3;
+  }
+
+  & .secure-private div[data-component-part="card-icon"] svg {
+    background-color: #54AB20;
+  }
+}
+
+.sierra-risks .card {
+  border-color: #FE5000 !important;
+  & svg {
+    background-color: #FE5000;
+  }
 }
