@@ -16,6 +16,10 @@ header div.eyebrow {
   }
 }
 
+#chat-assistant-sheet a span {
+  color: #01B6E3 !important;
+}
+
 .nav-logo {
   height: 56px;
   width: auto;
