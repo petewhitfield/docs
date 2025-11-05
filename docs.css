@@ -35,28 +35,6 @@ header div.eyebrow {
   color: #01B6E3;
 }
 
-.clickable-card div[data-component-part="card-icon"] svg {
-  background-color: #01B6E3;
-}
-
-.clickable-card .card:hover {
-  border-color: #01B6E3 !important;
-
-  & svg {
-    color: #01B6E3;
-  }
-}
-
-.sierra-card {
-  & .contextualized div[data-component-part="card-icon"] svg {
-    background-color: #01B6E3;
-  }
-
-  & .secure-private div[data-component-part="card-icon"] svg {
-    background-color: #54AB20;
-  }
-}
-
 .sierra-risks .card {
   border-color: #FE5000 !important;
   & svg {

@@ -35,8 +35,8 @@
             "icon": "message-square-more",
             "pages": [
               "sierra/about-and-faq",
-              "sierra/releases",
               "sierra/data-policy",
+              "sierra/releases",
               "sierra/sierra-learning-series"
             ]
           },
