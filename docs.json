@@ -24,7 +24,6 @@
         "groups": [
           {
             "group": "Getting started",
-            "icon": "rocket",
             "pages": [
               "welcome",
               "feedback"
@@ -32,7 +31,6 @@
           },
           {
             "group": "SIERRA",
-            "icon": "message-square-more",
             "pages": [
               "sierra/about-and-faq",
               "sierra/data-policy",
@@ -42,7 +40,6 @@
           },
           {
             "group": "Tango",
-            "icon": "file-text",
             "pages": [
               "tango/about",
               "tango/installation-guide",
@@ -51,9 +48,9 @@
           },
           {
             "group": "AI Tools",
-            "icon": "brain-circuit",
             "pages": [
-              "ai-tools/cursor"
+              "ai-tools/cursor",
+              "ai-tools/claude-code"
             ]
           }
         ]
@@ -63,7 +60,6 @@
         "groups": [
           {
             "group": "Getting started",
-            "icon": "square-terminal",
             "pages": [
               "api-reference/introduction",
               "api-reference/authentication"
@@ -71,12 +67,10 @@
           },
           {
             "group": "SIERRA API",
-            "icon": "message-square-code",
             "openapi": "https://api.sierra.absconsulting.com/openapi.json"
           },
           {
             "group": "Documents Service",
-            "icon": "file-code",
             "openapi": "https://documents.absconsulting.ai/openapi.json"
           }
         ]
@@ -86,7 +80,6 @@
         "groups": [
           {
             "group": "Blog",
-            "icon": "notebook-pen",
             "pages": [
               "blog"
             ]
@@ -97,7 +90,8 @@
             "pages": [
               "articles/welcome-to-aicoe",
               "articles/free-tokens",
-              "articles/buckle-up"
+              "articles/buckle-up",
+              "articles/cursor"
             ]
           }
         ]
