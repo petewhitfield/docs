@@ -59,3 +59,12 @@ header div.eyebrow {
     background-color: #FE5000;
   }
 }
+
+.blue-link a {
+  color: #01B6E3 !important;
+  border-color: #01B6E3;
+}
+
+.white-link a {
+  border-color: #FFFFFF;
+}
