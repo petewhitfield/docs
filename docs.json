@@ -49,8 +49,7 @@
           {
             "group": "AI Tools",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code"
+              "ai-tools/code-generation"
             ]
           }
         ]
@@ -61,7 +60,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "api-reference/introduction",
+              "api-reference/welcome",
               "api-reference/authentication"
             ]
           },
@@ -91,7 +90,7 @@
               "articles/welcome-to-aicoe",
               "articles/free-tokens",
               "articles/buckle-up",
-              "articles/cursor"
+              "articles/code-generation"
             ]
           }
         ]
@@ -135,7 +134,7 @@
         "go"
       ],
       "defaults": "required",
-      "prefill": true
+      "prefill": false
     }
   }
 }

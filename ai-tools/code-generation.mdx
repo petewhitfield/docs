@@ -1,0 +1,40 @@
+---
+title: "Code Generation"
+description: "Generative coding is controversial among software engineers. This article describes the philosophy that the AI Center of Excellence has adopted in using code generation tools. It also provides an introduction to the two products that we use and want to make available to the company."
+---
+
+## Know thy enemy
+
+The world of software engineering is changing. There are thousands of new SaaS products on the market that promise to streamline business operations while delivering shiny modern interfaces and AI integrations. For our business leaders, it is tempting to purchase off-the-shelf software that achieves 80% of the value of a purpose-built internal solution. It is a business reality that developing custom software is expensive and time-consuming.
+
+To earn the right to build solutions that deliver superior value, we must find ways to make our software development more cost-effective. The argument isn’t “AI vs. traditional” coding. It’s “purpose-built vs. SaaS” solutions. We believe that the best possible future for ABS and its affiliated companies involves specialized software that delivers maximum value for our customers. To justify continuing to make purpose-built software, we have to do it faster and cheaper.
+
+## Is code generation the solution?
+
+Soon, perhaps.
+
+For the past year, the AI Center of Excellence team has been aggressively adopting AI code generation tools. This has enabled us to quantifiably increase our code output, even though it is clear that the AIs do not yet write production-ready code on their own. Here's the kicker: code generation tools are getting better.
+
+Much better.
+
+Over the last year, new LLM releases, more reliable agentic workflows, and better "micro-versioning" protocols have enabled AI to drastically increase its contribution to our products.
+
+## Cursor and Claude Code
+
+There are a variety of code generation tools out there, but our team has converged on two that seem to be leading the market: Cursor and Claude Code.
+
+Cursor is a fork of VS Code with embedded AI agents and advanced "auto complete" capabilities. The system also indexes your project files so that it can anticipate and propagate complex changes across large code bases. Cursor is not dependent on any one LLM provider and can be configured to use any of the latest and greatest models.
+
+Claude Code has similar capabilities, but it is implemented differently. It runs in the terminal, making it IDE agnostic, but can also be deployed as a VS Code extension. It uses Anthropic's Claude LLMs, naturally.
+
+These tools can be used simultaneously on the same project. They have different strengths and weaknesses and the AI Center of Excellence team uses both.
+
+## Are they safe?
+
+AI code generation tools can introduce cyber vulnerabilities into your software development life cycle, primarily by introducing vulnerable or fradulent dependencies, or hardcoding secrets in your project. Both Cursor and Claude Code have settings to ensure that private code bases are not shared with LLM providers to be used for model training. In addition, like GitHub, these tools will not index or read the contents of environment files. By managing enterprise accounts for these tools, the AI Center of Excellence is able to enforce critical security settings.
+
+## Get a license
+
+If you would like to try either of these products, please discuss it with your manager and then [reach out](/feedback) to us, copying your manager.
+
+For now, we are providing these licenses free of charge to the business units that are using them. As usage increases, we may modify this policy. If you get a license, please be sure to use it. From month to month, we will monitor usage and revoke licenses that are not being used.
