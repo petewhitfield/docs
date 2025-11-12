@@ -70,7 +70,7 @@
           },
           {
             "group": "Documents Service",
-            "openapi": "https://documents.absconsulting.ai/openapi.json"
+            "openapi": "https://documents.absconsulting.com/openapi.json"
           }
         ]
       },
