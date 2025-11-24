@@ -50,3 +50,19 @@ header div.eyebrow {
 .white-link a {
   border-color: #FFFFFF;
 }
+
+/* Card date subtext */
+.card-date {
+  display: block;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* Dark mode styling for date */
+[data-theme="dark"] .card-date,
+.dark .card-date {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
