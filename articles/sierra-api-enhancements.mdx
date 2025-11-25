@@ -31,29 +31,20 @@ This allows you to maintain conversation context, include system instructions, a
 
 2. The completions endpoint is OpenAI compatible. OpenAI compatibility means that the endpoint follows the same request/response format as OpenAI's API, making it a drop-in replacement for OpenAI endpoints. That means you can easily connect tools like Obsidian, LangChain, or any application that supports OpenAI-compatible APIs to this endpoint, enabling free (for you), secure access to LLMs without changing your existing code.
 
-
 ## New models
 
 We've refreshed the models available in the new completions endpoint. Here's when to use each of these:
 
 1. **gpt-5-1** - The most capable GPT-5 model, ideal for complex reasoning tasks, code generation, and sophisticated analysis. Use this when you need the highest quality output and can tolerate longer response times.
-
 2. **gpt-5-mini** - A balanced model offering strong performance at a lower cost. Great for general-purpose tasks, content generation, and most production workloads where you need reliable quality without the premium price.
-
 3. **gpt-5-nano** - The fastest and most cost-effective GPT-5 model. Perfect for simple queries, quick completions, and high-volume applications where speed and cost efficiency are priorities.
-
 4. **claude-haiku-4-5** - Anthropic's fastest model, excellent for quick responses, simple Q&A, and high-throughput scenarios. Use this when you need Claude's safety-focused approach with minimal latency.
-
 5. **claude-sonnet-4-5** - A balanced Claude model offering strong reasoning capabilities. Ideal for analysis, summarization, and tasks requiring careful consideration of context.
-
 6. **claude-opus-4-1** - Anthropic's most capable model, best for complex reasoning, long-form content generation, and tasks requiring deep understanding. Use when you need Claude's highest quality output.
-
 7. **grok-4-fast-non-reasoning** - Grok's fast model without reasoning capabilities. Good for straightforward completions and when you need Grok's unique perspective on current events and real-time information.
-
 8. **grok-4-fast-reasoning** - Grok's fast model with reasoning capabilities. Useful when you need Grok's reasoning combined with its real-time knowledge, though note that this model is occasionally experiencing downtime right now.
 
 We've also added an endpoint GET `/v1/completions/models` which lists all available models in the POST `/v1/completions` endpoint, with some key information about each. Use this endpoint to see the latest models, as we will periodically refresh the models in the API.
-
 
 ## Deprecation of inference endpoint
 
@@ -63,26 +54,20 @@ Due to the addition of the OpenAI compatible completions endpoint, equipped with
   **Important:** The `/v1/inference` endpoint will be deprecated on December 17th. Please migrate your workloads to the `/v1/completions` endpoint before this date to avoid service interruptions.
 </Warning>
 
-
 ## New embedding model
 
-We have support for `text-embed-3-large` to the `/v1/embed` endpoint. The `text-embed-3-small` embedding model is suitable for most use cases, but the larger embedding dimensions provide better semantic understanding and improved accuracy for similarity comparisons. We have also added a GET endpoint at `/v1/embed/models` which lists available models to the POST endpoint, similar to completions. Use this to see the latest models available, as we will periodically refresh them. 
-
+We added support for `text-embed-3-large` to the `/v1/embed` endpoint. The `text-embed-3-small` embedding model is suitable for most use cases, but the larger embedding dimensions provide better semantic understanding and improved accuracy for similarity comparisons. We have also added a GET endpoint at `/v1/embed/models` which lists available models to the POST endpoint, similar to completions. Use this to see the latest models available, as we will periodically refresh them.
 
 ## Web search tools
 
 We added four new tools endpoints to the API:
 
 1. **`/v1/tools/web/crawl`** - Give it a list of URLs and it returns the contents of those URLs. This is useful for extracting and processing content from specific web pages you want to analyze or incorporate into your applications.
-
 2. **`/v1/tools/web/search`** - Give it a search query and optional filters, and it returns top search results with content. Perfect for finding relevant information across the web, gathering current data, or performing research queries programmatically.
-
 3. **`/v1/tools/web/research`** - Kick off a long-running web research task that runs asynchronously (think Deep Research in ChatGPT). This endpoint initiates comprehensive research on a topic, gathering information from multiple sources and synthesizing findings.
-
 4. **`/v1/tools/web/research/{research_id}`** - Get the status of a research task (useful to poll the research task for completion, then see the research results). Use this endpoint to check on the progress of your research tasks and retrieve the final results once complete.
 
 You will see these tools in use in SIERRA soon, with the addition of web agents.
-
 
 ## Explore
 
