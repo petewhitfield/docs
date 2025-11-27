@@ -25,25 +25,25 @@ SIERRA is an AI chat assistant designed to support the employees of ABS. The AI 
 
 ## Training Videos
 
-#### <Icon icon="video" size={20} /> SIERRA Learning Series
+#### SIERRA Learning Series
 
 These videos are designed to empower learners with practical skills in using SIERRA, covering everything from foundational concepts to advanced techniques. Dive in and elevate your productivity!
 
 <span class="blue-link">[Watch SIERRA Learning Series](https://eagle.sharepoint.com/sites/trySIERRA)</span>
 
-#### <Icon icon="video" size={20} /> How to Research and Write Using Generative AI Tools
+#### How to Research and Write Using Generative AI Tools
 
 This LinkedIn Learning video provides a great overview of how to work with ChatGPT generate content. In particular, **Section 1: Overview of Working with AI** is essential viewing, particularly the framework he introduced for writing an effective prompt for AI. If you only watch one thing, it should be this section.
 
 <span class="blue-link">[Watch on LinkedIn Learning](https://www.linkedin.com/learning/how-to-research-and-write-using-generative-ai-tools/how-to-work-with-the-responses-from-a-generative-ai-chatbot)</span>
 
-#### <Icon icon="video" size={20} /> Learning ChatGPT for Business Analysis
+#### Learning ChatGPT for Business Analysis
 
 This LinkedIn Learning video provides an overview of ChatGPT basics before introducing several common business use cases. While generic, it should give you some ideas about what is possible with ChatGPT and how you can tailor it to your work.
 
 <span class="blue-link">[Watch on LinkedIn Learning](https://www.linkedin.com/learning/learning-chatgpt-for-business-analysis)</span>
 
-#### <Icon icon="video" size={20} /> Prompt Engineering: How to Talk to the AIs
+#### Prompt Engineering: How to Talk to the AIs
 
 This LinkedIn Learning video provides a good summary of the core concepts of large-language models (LLMs) before diving into a detailed exploration of how to develop prompts for various applications.
 
@@ -51,30 +51,27 @@ This LinkedIn Learning video provides a good summary of the core concepts of lar
 
 ## Models
 
-SIERRA makes the latest models from frontier providers such as OpenAI, Meta, and xAI available to ABS employees in a private environment in Microsoft Azure. Below is a table of the models currently available.
+SIERRA makes the latest models from frontier providers such as OpenAI, Anthropic, and xAI available to ABS employees in a private environment in Microsoft Azure. Below is a table of the models currently available.
 
-| **Model**            | **Description**               | **Reasoning** | **Context**             | **Training Cutoff** | **Input/1M tokens** | **Output/1M tokens** |
-| :------------------- | :---------------------------- | :------------ | :---------------------- | :------------------ | :------------------ | :------------------- |
-| Llama-4-Maverick     | General purpose model         | **No**        | 1000K                   | August 2024         | \$0.20              | \$0.82               |
-| gpt-auto             | Dynamic model selection       | --            | --                      | --                  | --                  | --                   |
-| gpt-5-thinking       | General purpose model         | **Yes**       | 272K Input, 128K Output | October 2024        | \$1.25              | \$10.00              |
-| gpt-5-mini           | Faster general purpose model  | **Yes**       | 272K Input, 128K Output | May 2024            | \$0.25              | \$2.00               |
-| gpt-4o               | Legacy general purpose model  | **No**        | 128K                    | September 2023      | \$2.50              | \$10.00              |
-| grok-3               | General purpose model         | **No**        | 131K                    | November 2024       | \$3.00              | \$15.00              |
-| grok-3-mini          | Lightweight reasoning model   | **Yes**       | 131K                    | November 2024       | \$0.25              | \$1.27               |
+| **Model**                     | **Description**                                 | **Reasoning** | **Context<br/>(tokens)** | **Training<br/>Cutoff** | **Input<br/>per 1M tokens** | **Output<br/>per 1M tokens** |
+|-------------------------------|-------------------------------------------------|:-------------:|:-----------------------:|:-----------------------:|:---------------------------:|:-----------------------------:|
+| **gpt-5-1**                   | OpenAI's most capable model                     | Yes           | 400K                    | September 2024          | $1.25                       | $10.00                        |
+| **claude-sonnet-4-5**         | Anthropic's balanced model                      | Yes           | 200K                    | January 2025            | $3.00                        | $15.00                        |
+| **claude-opus-4-5**           | Anthropic's most capable model                  | Yes           | 1M                      | March 2025              | $15.00                       | $75.00                        |
+| **grok-4-fast-non-reasoning** | xAI's model tuned for speed and large context   | No            | 2M                      | May 2025                | $0.43                        | $1.73                         |
 
-### <Icon icon="message-circle-question-mark" size={20} /> What are tokens?
+### What are tokens?
 
 Tokens are the basic units of text that AI models process. ABS pays for tokens, not words. Roughly, 1 token equals 4 characters or 0.75 words in English. For example, "Hello world" is about 2 tokens. One page of size 12 Arial font is ~666 tokens. The pricing shown is per 1 million tokens, which is approximately 750,000 words or 4 million characters.
 <Tip>
 Tokens are cheap. You can get a lot of work done for a few dollars.
 </Tip>
 
-### <Icon icon="message-circle-question-mark" size={20} /> What is the context window?
+### What is the context window?
 
 A model's context window is the maximum amount of text or data (usually measured in tokens) that it can process at one time, including both input and output. It determines how much information the model can "remember" or consider when generating a response. For example, a larger context window allows the model to handle longer conversations or documents, while a smaller one limits it to shorter inputs.
 
-### <Icon icon="message-circle-question-mark" size={20} /> What is the training cutoff date?
+### What is the training cutoff date?
 
 The training cutoff date indicates when the model's training data ends. Models cannot access information or events that occurred after this date. For example, a model with an April 2024 cutoff won't know about events, news, or developments that happened after April 2024.
 
@@ -82,13 +79,21 @@ The training cutoff date indicates when the model's training data ends. Models c
 
 Tools extend SIERRA's capabilities by allowing it to access ABS knowledge repositories and take actions. SIERRA does its best to determine if it should use a tool for a given task, but you can always ask it to use or not use a tool directly.
 
-### Attachments
+### File Search
 
-The Attachments tool allows SIERRA to search and analyze documents you've uploaded to your chat.
+Several file search tools allow SIERRA to list the files available to its current context, read the content of individual files, and search all files on a thread or workspace.
+
+### Web Search
+
+The web search tools allow SIERRA to crawl individual URLs and execute web searches via a secure API. If SIERRA thinks a query that's about to be sent to the search API may contain confidential information, it will ask you to approve or discard the search.
 
 ### SkillShare
 
-The SkillShare tool allows SIERRA to search ABS Consulting's skillset and resume database to find employees with specific qualifications, experience, or skills.
+The SkillShare tool allows SIERRA to search ABS Group's skillset and resume database to find employees with specific qualifications, experience, or skills.
+
+### Memories
+
+The memories tool allows SIERRA to record information to a database that you ask it to remmeber. That way it will retain that context across the boundary of threads and workspaces.
 
 <Note>
   If you have an idea for a new tool, please <span class="white-link">[let us know](/feedback)</span>.
@@ -119,13 +124,13 @@ When working with workspaces, keep these best practices in mind:
 
 ## Privacy
 
-### <Icon icon="message-circle-question-mark" size={20} /> Is the information I provide in prompts to SIERRA available to anyone else?
+### Is the information I provide in prompts to SIERRA available to anyone else?
 The inputs and outputs you provide to SIERRA are NOT available to Microsoft, OpenAI, Meta, xAI, or any other company. Your prompts and responses are NOT used to improve the models, and they are NOT used to improve any Microsoft or 3rd party products or services. Your prompts and responses are available only to you; however, they are monitored by system administrators and can be audited for proper business use.
 
-### <Icon icon="message-circle-question-mark" size={20} /> Is SIERRA suitable for ABS or client proprietary data?
+### Is SIERRA suitable for ABS or client proprietary data?
 Yes – SIERRA is hosted in a secure environment where you can provide ABS and client information in the prompts if it complies with the Data Policy.
 
-### <Icon icon="message-circle-question-mark" size={20} /> Do I need to inform customers that I am using SIERRA?
+### Do I need to inform customers that I am using SIERRA?
 Check with your manager or ask the legal department if there are any contractual provisions restricting use of AI or requiring disclosure of use of AI.
 
 
