@@ -79,21 +79,34 @@ The training cutoff date indicates when the model's training data ends. Models c
 
 Tools extend SIERRA's capabilities by allowing it to access ABS knowledge repositories and take actions. SIERRA does its best to determine if it should use a tool for a given task, but you can always ask it to use or not use a tool directly.
 
+### Memories
+
+The memories tool allows SIERRA to record information to a database that you ask it to remmeber. That way it will retain that context across the boundary of threads and workspaces.
+
 ### File Search
 
 Several file search tools allow SIERRA to list the files available to its current context, read the content of individual files, and search all files on a thread or workspace.
 
 ### Web Search
 
-The web search tools allow SIERRA to crawl individual URLs and execute web searches via a secure API. If SIERRA thinks a query that's about to be sent to the search API may contain confidential information, it will ask you to approve or discard the search.
+The web search tools allow SIERRA to crawl individual URLs, execute web searches, and spawn asynchronous research report generation. If SIERRA thinks a query that's about to be sent to the search API may contain confidential information, it will ask you to approve or discard the search.
 
-### SkillShare
+### SkillShare Knowledge Repository
 
-The SkillShare tool allows SIERRA to search ABS Group's skillset and resume database to find employees with specific qualifications, experience, or skills.
+The SkillShare tool allows SIERRA to search ABS Group's skillset and resume database to find employees with specific qualifications, experience, or skills. By default, it is only enabled for ABS Group employees.
 
-### Memories
+### HR Knowledge Repository
 
-The memories tool allows SIERRA to record information to a database that you ask it to remmeber. That way it will retain that context across the boundary of threads and workspaces.
+Search for information inside HR policy documents and benefits guides, specific to a company (Bureau/Group/Wavesight) and country.
+
+### Plato Knowledge Repository
+
+Search ABS rules and maritime regulations. This tool is in preview and is only available for some users. 
+
+### eCFR Knowledge Repository
+
+Search a curated index of the Electronic Code of Federal Regulations. This tool is in preview and is only available for some users.
+
 
 <Note>
   If you have an idea for a new tool, please <span class="white-link">[let us know](/feedback)</span>.
