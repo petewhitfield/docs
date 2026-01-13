@@ -42,8 +42,8 @@
             "group": "Tango",
             "pages": [
               "tango/about",
-              "tango/releases",
               "tango/installation-guide",
+              "tango/releases",
               "tango/watch-a-demo"
             ]
           },
