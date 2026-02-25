@@ -1,0 +1,73 @@
+---
+title: "Workspaces Just Got Smarter"
+---
+
+We've made significant improvements to SIERRA Workspaces to give teams more control over shared context and repeatable workflows. Additional technical discussion on context engineering with Workspaces is found [here](/articles/workspace-context-engineering).
+
+<Frame>
+  ![Workspaces Smarter Banner](/images/banners/workspaces_smarter_banner.jpg)
+</Frame>
+
+## New: Workspace Task Prompts
+
+Task Prompts are reusable, curated instructions for repeatable activities. If your team performs the same type of analysis, generates similar reports, or follows standard review processes multiple times, Task Prompts promote consistency.
+
+Task Prompts can be detailed and complex, including:
+
+- Step-by-step instructions
+- Guidance on using thread attachments vs. workspace files
+- Specific tools SIERRA should invoke
+- Output format requirements
+- When to create memories
+
+Users invoke a Task Prompt when they need it, making these ideal for structured workflows that need to be executed the same way every time.
+
+**[Screenshot suggestion: Task Prompts list view and a sample detailed task prompt]**
+
+### Task Prompt Library
+
+To get you started with Task Prompts, we've created a library of template Task Prompts that anyone in the organization can use. Browse pre-built prompts for common activities and add them to your workspace—no need to start from scratch.
+
+**[Screenshot suggestion: Task Prompt Library browser showing available templates]**
+
+## New: Workspace Memories
+
+Workspace Memories allow you to save persistent context that augments SIERRA's knowledge across all threads in a workspace. Unlike workspace files that require retrieval, memories are included directly in the system prompt—meaning they're always present in the background of every message.
+
+Use memories to capture:
+
+- Shared project context that evolves over time
+- Team preferences and working standards
+- Workspace-specific definitions or acronyms
+- Any knowledge that all workspace users need consistently
+
+<Warning>
+  Memories are shared across all users and threads in the workspace, so only save memories that are relevant to everyone.
+</Warning>
+
+**[Screenshot suggestion: Workspace Memories interface showing the save/edit functionality]**
+
+## Changed: Instructions → Context
+
+We've renamed "Instructions" to "Context" and clarified its purpose. Context is for general background information that applies to all threads in the workspace—like the workspace's purpose, team standards, or high-level guidance.
+
+**Why the change?** With the introduction of Task Prompts, we needed to distinguish between general workspace context and specific task instructions. If your workspace handles multiple types of activities, those should now be defined as individual Task Prompts rather than crammed into one Context block.
+
+If your workspace is dedicated to a single activity, you can still include specific instructions in Context. But for most teams managing multiple workflows, Task Prompts will be more appropriate.
+
+## Redesigned Left Navigation
+
+All workspace-level controls are now consolidated in the left navigation bar. We've removed the pills that used to appear at the top of the workspace home screen. Everything is now accessible from one consistent location.
+
+**[Screenshot suggestion: New left navigation bar showing all workspace controls]**
+
+## Getting Started
+
+If you're already using Workspaces:
+
+1. Your existing "Instructions" have been migrated to "Context"—no action needed
+2. Explore the new Task Prompts section to build reusable workflows
+3. Check the Task Prompt Library for templates
+4. Use Memories sparingly for truly shared, persistent knowledge
+
+If you're new to Workspaces, this is a great time to set one up for your team. The combination of Context, Files, Task Prompts, and Memories gives you precise control over how SIERRA supports your work.

@@ -91,7 +91,9 @@
               "articles/welcome-to-aicoe",
               "articles/free-tokens",
               "articles/buckle-up",
-              "articles/code-generation"
+              "articles/code-generation",
+              "articles/untitled-page",
+              "articles/workspace-context-engineering"
             ]
           }
         ]
